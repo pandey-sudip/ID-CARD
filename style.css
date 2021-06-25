@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    text-align: center;
+    display: block;
+	background-color: #089ef5;
+}
+.card-body{
+    text-align: center;
+    position: absolute;
+    margin: auto;
+    bottom: 0;
+    top: 0;
+    height: 62vh;
+    width: 20vw;
+    background-color: white;
+    left: 0;
+    right: 0;
+    border-radius: 10px;
+    align-items: center;
+    display: block;
+    justify-content: center;
+
+}
+.header{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-top: -4.3px;
+    color: white;
+    /* position: ; */
+    background-color: #092141;
+}
+h6{
+    /* margin: 5px; */
+    font-size: 25px;
+}
+h5{
+
+    font-size: 19px;
+    margin: 8px;
+}
+h4{
+    margin: 8px;
+    font-size: px;
+}
+.main-part{
+    margin-top: 28px;
+}
+.photo{
+    height: 109px;
+    width: 98px;
+    margin-left: 105px;
+    border: 1px solid black;
+}
+.details{
+    margin-top: 15px;
+    margin-left: 8px;
+    text-align: left;
+}
+h3{
+    margin: 10px;
+}
+.idno{
+    margin-left: -62px;
+    margin-top: -20px;
+}
+#idno{
+    font-size: 19px;
+    font-weight: 770;
+    margin-top: -28px;
+    margin-left: 35px;
+    position: fixed;
+}
+#name{
+    font-size: 19px;
+    font-weight: 770;
+    margin-top: -32px;
+    margin-left: 75px;
+    position: fixed;
+}
+#address{
+    font-size: 19px;
+    font-weight: 770;
+    margin-top: -32px;
+    margin-left: 98px;
+    position: fixed;
+}
+#contact{
+    font-size: 19px;
+    font-weight: 770;
+    margin-top: -32px;
+    margin-left: 125px;
+    position: fixed;
+}
+#parent{
+    font-size: 19px;
+    font-weight: 770;
+    margin-top: -32px;
+    margin-left: 135px;
+    position: fixed;
+}
+#blood-grp{
+    font-size: 19px;
+    font-weight: 770;
+    margin-top: -32px;
+    margin-left: 135px;
+    position: fixed;
+}
+
+.footer{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #091d09;
+    height: 55px;
+}
+.footer{
+    color: white;
+
+    text-align: left;
+
+}
+.phone{
+    position: fixed;
+    /* margin-top: ; */
+}
+h1{
+    margin-top: 2px;
+    margin: 5px;
+    font-size: 18px;
+}
+.email{
+    margin-top: 23px;
+    position: fixed;
+}

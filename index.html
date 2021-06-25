@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Id card Generater Using JS</title>
+</head>
+
+<body>
+    <div class="card-body" id="card-body">
+        <div class="header">
+            <h6 class="ctevt">CTEVT</h6>
+            <h5>Adhikhola Polytechnic Institute</h5>
+            <h4>Waling-13, Syangja</h4>
+        </div>
+        <div class="main-part">
+            <div class="idno">
+                <h1>ID No.:</h1><span id="idno"></span>
+            </div>
+            <span id="Photo"><input type="file" accept="image/*" name="image" id="file" onchange="loadFile(event)"
+                style="display: none;">
+            <img id="output" width="98px" height="109px" /></span>
+            <div class="details">
+                <div class="name">
+                    <h3>Name:</h3><span id="name"></span>
+                </div>
+                <div class="address">
+                    <h3>Address:</h3><span id="address"></span>
+                </div>
+                <div class="contact">
+                    <h3>Contact No.:</h3><span id="contact"></span>
+                </div>
+                <div class="parent">
+                    <h3>Parent Name:</h3><span id="parent"></span>
+                </div>
+                <div class="blood-grp">
+                    <h3>Blood Group:</h3><span id="blood-grp"></span>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <span class="phone">
+                <h1>Phone: 9856001005, 9802835157
+                </h1>
+            </span>
+            <span class="email">
+                <h1>E-mail: ctevt.ap@gmail.com
+                </h1>
+            </span>
+        </div>
+    </div>
+    <div class="button">
+        <button style="position: fixed;margin-top: 600px;height: 45px;width: 175px;color: red;border: 2px solid red;outline: none
+        ;cursor: pointer;margin-left: -665px;
+        background-color: aqua;font-size: 20px;" onclick="generateIdcard()">Generate Id Card</button>
+    </div>
+    <div class="Print">
+        <button style="position: fixed;margin-top: 600px;height: 45px;width: 175px;color: red;border: 2px solid red;outline: none
+        ;cursor: pointer;margin-left: -265px;
+        background-color: aqua;font-size: 20px;" onclick="ss()"window.print">Print Id Card</button>
+    </div>
+    <label for="file"
+        style="cursor: pointer;color: red;border: 1px solid black;margin-top: 600px;margin-left: -425px;height: 40px;padding: 8px 10px;position: fixed;background-color: aqua;font-size: 20px;font-weight: 700;"
+        height="109" ; width="98" ; id="button">Upload Photo</label>
+</body>
+<script>
+    var loadFile = function (event) {
+        var image = document.getElementById('output');
+        image.src = URL.createObjectURL(event.target.files[0]);
+    };
+</script>
+<script src="main.js"></script>
+
+<script>
+    function ss(){
+        html2canvas(document.getElementById('card-body')).then(function(canvas){
+        document.body.appendChild(canvas)
+    })
+    }
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js" integrity="sha512-OqcrADJLG261FZjar4Z6c4CfLqd861A3yPNMb+vRQ2JwzFT49WT4lozrh3bcKxHxtDTgNiqgYbEUStzvZQRfgQ==" crossorigin="anonymous"></script>
+<script>
+</html>
